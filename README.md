@@ -29,6 +29,8 @@
 - Logout feature
 - Get the feed and add the feed in the store
 - Build the userCard on feed
+- new page to see all connections
+- new page to see all received requests 
 
 - Body
     - NavBar
