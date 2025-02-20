@@ -31,6 +31,7 @@
 - Build the userCard on feed
 - new page to see all connections
 - new page to see all received requests 
+- feature - accept/reject connection request
 
 - Body
     - NavBar

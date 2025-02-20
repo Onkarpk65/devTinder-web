@@ -9,15 +9,19 @@ import { useEffect } from "react"
 
 
 const Body = () => {
+    console.log("Body component rendered")
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const userData = useSelector((store) => store.user);
     const fetchUser = async () => {
+         
         // If User data is present then don't make an API call
         if (userData) return;
         try {
             const user = await axios.get(BASE_URL + '/profile/view', {withCredentials: true});
+            console.log('Body Component rendered', user)
             dispatch(addUser(user.data));
+            
         }
         catch (err) {
             if (err.status === 401) {
