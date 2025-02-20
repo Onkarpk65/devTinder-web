@@ -20,7 +20,10 @@
 - provider 
 - create slice 
 - add reducer 
-- 
+- Add redux devTools in store 
+- Login and see if user is coming properly in the store.
+- NavBar should update as soon as user logs in
+- Refactor code to add constants file + create a components store
 
 - Body
     - NavBar
