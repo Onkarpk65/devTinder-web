@@ -9,7 +9,6 @@ import { useEffect } from "react"
 
 
 const Body = () => {
-    console.log("Body component rendered")
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const userData = useSelector((store) => store.user);
@@ -19,7 +18,7 @@ const Body = () => {
         if (userData) return;
         try {
             const user = await axios.get(BASE_URL + '/profile/view', {withCredentials: true});
-            console.log('Body Component rendered', user)
+            
             dispatch(addUser(user.data));
             
         }
